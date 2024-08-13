@@ -1,1 +1,2 @@
 # streams-etl
+Streams ETL is a Spring Boot application with Spring Cloud Stream and Kafka as main the components. Some native KStream methods are used as they were not yet in Spring Cloud Stream at the time this was created (August 13 2024). Operations performed by Streams ETL: 1) deserialize JSON event messages from an input Kafka topic, 2) add lookup data from a MariaDB database to each event message, and 3) serialize the event message into a Protobuf format in an output Kafka topic.
